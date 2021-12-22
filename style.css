@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Teko;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "display display display display"
+  "AC C divide multiply"
+  "seven eight nine plus"
+  "four five six minus"
+  "one two three equals"
+  "zero zero dot equals";
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: grey;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5%;
+  font-size: 2em;
+}
+.button:hover {
+  border: 1px solid white;
+  color: aqua;
+}
+
+
+.clear, .backspace {
+  background-color: tomato;
+}
+
+.equals {
+  background-color: green;
+}
+
+.operator {
+  background-color: orange;
+}
+
+
+.active {
+  background-color: orchid;
+}
+
+.display {
+  grid-area: display;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 3em;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.display {
+  background-color: rgb(92, 100, 211);
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equals {
+  grid-area: equals;
+}
